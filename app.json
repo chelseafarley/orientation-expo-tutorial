@@ -13,16 +13,32 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "requiresFullScreen": true,
+      "bundleIdentifier": "com.chelseafarley.orientationexpotutorial"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.chelseafarley.orientationexpotutorial"
     },
+    "plugins": [
+      [
+        "expo-screen-orientation",
+        {
+          "initialOrientation": "LANDSCAPE"
+        }
+      ]
+    ],
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "3d06fe6c-a4e4-4b9a-a51d-9886635cd69f"
+      }
     }
   }
 }
